@@ -22,4 +22,8 @@ public class StringUtil
 		return firstChar+str.substring(1);
 	}
 	
+	public static String upperFirstChar(String str){
+		String firstChar=str.substring(0, 1).toUpperCase();
+		return firstChar+str.substring(1);
+	}
 }
