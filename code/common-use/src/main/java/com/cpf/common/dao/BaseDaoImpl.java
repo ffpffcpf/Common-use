@@ -37,7 +37,7 @@ public class BaseDaoImpl extends HibernateDaoUtil implements BaseDao
 	@Override
 	public Object get(Class clazz, long id)
 	{
-		return this.get(clazz, id);
+		return getCurrentSession().get(clazz, id);
 	}
 
 }
