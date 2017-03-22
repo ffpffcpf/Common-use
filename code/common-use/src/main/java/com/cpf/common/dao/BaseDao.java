@@ -1,5 +1,7 @@
 package com.cpf.common.dao;
 
+import java.util.List;
+
 @SuppressWarnings("rawtypes")
 public interface BaseDao
 {
@@ -12,4 +14,6 @@ public interface BaseDao
 	void remove(Class clazz,long id);
 	
 	Object get(Class clazz,long id);
+	
+	List getAll(Class clazz);
 }

@@ -17,4 +17,7 @@ public class CommonConstant
 	
 	public static final String MSG_ADD_SUCCESS="添加成功";
 	public static final String MSG_ADD_FAIL="添加失败";
+	
+	public static final Integer PAGER_NO=1;
+	public static final Integer PAGER_SIZE=1;
 }

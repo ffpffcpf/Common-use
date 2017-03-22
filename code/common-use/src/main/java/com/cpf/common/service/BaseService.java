@@ -1,16 +1,19 @@
 package com.cpf.common.service;
 
+import java.util.List;
+
 @SuppressWarnings("rawtypes")
 public interface BaseService
 {
-	public void addObject(Object obj);
+	void addObject(Object obj);
 	
-	public void removeObject(Object obj);
+	void removeObject(Object obj);
 	
-	public void removeObject(Class clazz ,long id);
+	void removeObject(Class clazz ,long id);
 	
-	public Object modifyObject(Object obj);
+	Object modifyObject(Object obj);
 	
-	public Object retrieveAnObject(Class clazz,long id);
+	Object retrieveAnObject(Class clazz,long id);
 	
+	List retrieveObjectAll(Class clazz);
 }

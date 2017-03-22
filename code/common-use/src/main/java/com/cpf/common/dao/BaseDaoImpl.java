@@ -1,5 +1,8 @@
 package com.cpf.common.dao;
 
+import java.util.List;
+
+import org.hibernate.Criteria;
 import org.springframework.stereotype.Repository;
 
 @SuppressWarnings("rawtypes")
@@ -38,6 +41,13 @@ public class BaseDaoImpl extends HibernateDaoUtil implements BaseDao
 	public Object get(Class clazz, long id)
 	{
 		return getCurrentSession().get(clazz, id);
+	}
+
+	@Override
+	public List getAll(Class clazz)
+	{
+		Criteria c=getCurrentSession().createCriteria(clazz);
+		return c.list();
 	}
 
 }
