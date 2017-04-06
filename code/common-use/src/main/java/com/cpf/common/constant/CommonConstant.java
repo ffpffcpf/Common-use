@@ -2,6 +2,8 @@ package com.cpf.common.constant;
 
 public class CommonConstant
 {
+	public static final String KEY_RESPONSEBEAN="bean";
+	
 	public static final String RESPONSE_CODE_200="200";
 	public static final String RESPONSE_CODE_400="400";
 	public static final String RESPONSE_CODE_404="404";
@@ -14,6 +16,9 @@ public class CommonConstant
 	public static final String MSG_PARAMETER_ERROR="参数错误";
 	public static final String MSG_USER_IS_NOT_EXIST="用户不存在";
 	public static final String MSG_LOGIN_FAIL="登录失败";
+	
+	public static final String MSG_FIND_SUCCESS="查询成功";
+	public static final String MSG_FIND_FAIL="查询失败";
 	
 	public static final String MSG_ADD_SUCCESS="添加成功";
 	public static final String MSG_ADD_FAIL="添加失败";
