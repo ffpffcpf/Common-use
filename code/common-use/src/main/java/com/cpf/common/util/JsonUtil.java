@@ -42,10 +42,14 @@ public class JsonUtil
 				map.put(key,value);
 				convertJsonToMap((JSONObject)value, map);
 			}else if (value instanceof JSONArray) {
-				Object obj=((JSONArray) value).get(0);
-				map.put(key, value);
-				if(obj instanceof JSONObject){
-					convertJsonToMap((JSONObject)obj, map);
+				JSONArray v=(JSONArray) value;
+				if (v.size()>0)
+				{
+					Object obj=v.get(0);
+					map.put(key, value);
+					if(obj instanceof JSONObject){
+						convertJsonToMap((JSONObject)obj, map);
+					}
 				}
 			}else {
 				map.put(key, value);

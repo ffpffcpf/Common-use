@@ -30,5 +30,5 @@ public class CommonConstant
 	public static final String MSG_UPDATE_FAIL="修改失败";
 	
 	public static final Integer PAGER_NO=1;
-	public static final Integer PAGER_SIZE=1;
+	public static final Integer PAGER_SIZE=10;
 }
