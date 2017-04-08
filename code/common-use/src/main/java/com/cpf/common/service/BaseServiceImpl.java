@@ -60,7 +60,7 @@ public class BaseServiceImpl implements BaseService
 			pageSize = CommonConstant.PAGER_SIZE;
 		}
 		if (CollectionUtil.isListEmpty(list))
-			return new Pager(pageSize, pageNo, 0L, list);
+			return new Pager(pageNo, pageSize, 0L, list);
 		
 		List resultList = new ArrayList();
 		
@@ -80,7 +80,7 @@ public class BaseServiceImpl implements BaseService
 			resultList.addAll(list);
 		}
 		
-		return new Pager(pageSize, pageNo, rowCount.longValue(), resultList);
+		return new Pager(pageNo, pageSize, rowCount.longValue(), resultList);
 	}
 
 
