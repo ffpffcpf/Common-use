@@ -3,6 +3,7 @@ package com.cpf.common.constant;
 public class CommonConstant
 {
 	public static final String KEY_RESPONSEBEAN="bean";
+	public static final String KEY_RESPONSE_MESSAGE="message";
 	
 	public static final String RESPONSE_CODE_200="200";
 	public static final String RESPONSE_CODE_400="400";
